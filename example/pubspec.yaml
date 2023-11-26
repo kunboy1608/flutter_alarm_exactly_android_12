@@ -1,0 +1,21 @@
+name: alarm_exactly_android_12_example
+description: Demonstrates how to use the alarm_exactly_android_12 plugin.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  alarm_exactly_android_12:
+    path: ..
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
