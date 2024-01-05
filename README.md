@@ -1,15 +1,25 @@
 # alarm_exactly_android_12
 
-Alarm permission handle on Android 12 upper
+Flutter package requests permission to send notifications at specific scheduled times.
 
-## Getting Started
+## How to use it
+Add code below into file pubspec.yaml
+```
+alarm_exactly_android_12:
+    git: 
+        url: https://github.com/kunboy1608/flutter_alarm_exactly_android_12.git
+        ref: v1.0.1 # branch name
+```
+Add text below into /android/app/src/main/AndroidManifest.xml in your project.
+```
+<uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+```
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+All done. Good luck.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+## Example
+```
+git clone https://github.com/kunboy1608/flutter_alarm_exactly_android_12.git
+cd flutter_alarm_exactly_android_12/example
+flutter run
+```
