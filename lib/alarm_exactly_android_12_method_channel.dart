@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -11,12 +13,18 @@ class MethodChannelAlarmExactlyAndroid12 extends AlarmExactlyAndroid12Platform {
 
   @override
   Future<bool?> request() async {
+    if (kIsWeb || !Platform.isAndroid){
+      return true;
+    }
     final result = await methodChannel.invokeMethod<bool>('request');
     return result;
   }
 
   @override
   Future<bool?> isGranted() async {
+    if (kIsWeb || !Platform.isAndroid){
+      return true;
+    }
     final result = await methodChannel.invokeMethod<bool>('isGranted');
     return result;
   }

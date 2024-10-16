@@ -1,6 +1,6 @@
 name: alarm_exactly_android_12
 description: Alarm permission handle on Android 12 upper
-version: 0.0.2
+version: 0.0.3
 homepage:
 
 environment:

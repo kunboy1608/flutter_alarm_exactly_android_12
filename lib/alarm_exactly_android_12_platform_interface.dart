@@ -25,10 +25,10 @@ abstract class AlarmExactlyAndroid12Platform extends PlatformInterface {
   }
 
   Future<bool?> request() async {
-    return true;
+    throw UnimplementedError('request() has not been implemented.');
   }
 
   Future<bool?> isGranted() async {
-    return true;
+    throw UnimplementedError('isGranted() has not been implemented.');
   }
 }
